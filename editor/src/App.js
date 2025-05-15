@@ -11,7 +11,7 @@ function App() {
   const handleModelChange = (e) => {
     const selectedModel = Number(e.target.value);
     setModel(selectedModel);
-    setModelMessage(`✅ Model ${selectedModel === 1 ? 'A' : 'B'} activated`);
+    setModelMessage(`✅ Model ${selectedModel === 1 ? 'V1' : 'V2'} activated`);
     setTimeout(() => setModelMessage(''), 2000);
   };
 
