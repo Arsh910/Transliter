@@ -164,10 +164,10 @@ def start_engine(model=1):
     decoder = None
     
     if model == 1:
-        checkpoint = torch.load('transliteration_model_v1.pth', map_location='cpu')
+        checkpoint = torch.load('models/transliteration_model_v1.pth', map_location='cpu')
     
     if model == 2:
-        checkpoint = torch.load('transliteration_model_v2.pth', map_location='cpu')
+        checkpoint = torch.load('models/transliteration_model_v2.pth', map_location='cpu')
 
     # Restore vocab
     input_stoi = checkpoint['input_stoi']
