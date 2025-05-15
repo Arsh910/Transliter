@@ -105,7 +105,7 @@ function App() {
         marginRight: 'auto',
         lineHeight: '1.6'
       }}>
-        ⚠️ <strong>Note:</strong> The <strong>first word</strong> may take a few seconds to process as the server wakes up (free plan cold start on Render).<br />
+        ⚠️ <strong>Note:</strong> The <strong>first word</strong> may take a few seconds to process as the server wakes up .<br />
         ✍️ Please <strong>type slowly</strong> — the app transliterates only the <strong>last word</strong> after you pause.
       </div>
 
