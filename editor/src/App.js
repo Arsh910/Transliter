@@ -91,6 +91,25 @@ function App() {
         )}
       </div>
 
+      <div style={{
+        backgroundColor: '#222',
+        color: '#f0ad4e',
+        padding: '1rem',
+        borderRadius: '8px',
+        textAlign: 'center',
+        marginBottom: '1.5rem',
+        fontWeight: '500',
+        boxShadow: '0 0 10px rgba(0,0,0,0.4)',
+        maxWidth: '800px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        lineHeight: '1.6'
+      }}>
+        ⚠️ <strong>Note:</strong> The <strong>first word</strong> may take a few seconds to process as the server wakes up (free plan cold start on Render).<br />
+        ✍️ Please <strong>type slowly</strong> — the app transliterates only the <strong>last word</strong> after you pause.
+      </div>
+
+          
       <textarea
         rows="10"
         value={text}
