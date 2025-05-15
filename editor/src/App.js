@@ -170,9 +170,62 @@ function App() {
           margin: '0 auto'
         }}>
           This web app uses a character-level encoder-decoder model trained on Hindi transliterations. It's built with <strong>React.js</strong> and powered by a <strong>PyTorch + FastAPI</strong> backend.
-          As you pause typing, each word gets sent to the server and comes back in Devanagari — instantly and smartly.
+          As you pause typing, each word gets sent to the server and comes back in Hindi — instantly and smartly.
         </p>
-      </div>  
+      </div>
+      <div style={{
+          marginTop: '4rem',
+          padding: '2.5rem',
+          background: '#111',
+          borderRadius: '16px',
+          color: '#fff',
+          boxShadow: '0 0 20px rgba(0,0,0,0.5)',
+          textAlign: 'center',
+          maxWidth: '900px',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }}>
+          <h2 style={{
+            fontSize: '2rem',
+            color: '#00FFFF',
+            marginBottom: '1.5rem'
+          }}>👨‍💻 Built With ❤️ By</h2>
+        
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '2.5rem',
+            flexWrap: 'wrap'
+          }}>
+            <div style={{
+              background: '#1e1e1e',
+              padding: '1.5rem',
+              borderRadius: '12px',
+              minWidth: '200px',
+              boxShadow: '0 0 10px rgba(0,0,0,0.3)'
+            }}>
+              <h3 style={{ margin: 0, color: '#FFD700' }}>Arshdeep Palial</h3>
+            </div>
+                        <div style={{
+              background: '#1e1e1e',
+              padding: '1.5rem',
+              borderRadius: '12px',
+              minWidth: '200px',
+              boxShadow: '0 0 10px rgba(0,0,0,0.3)'
+            }}>
+              <h3 style={{ margin: 0, color: '#FFD700' }}>Gaurav Yadav</h3>
+            </div>
+                        <div style={{
+              background: '#1e1e1e',
+              padding: '1.5rem',
+              borderRadius: '12px',
+              minWidth: '200px',
+              boxShadow: '0 0 10px rgba(0,0,0,0.3)'
+            }}>
+              <h3 style={{ margin: 0, color: '#FFD700' }}>Jaskaran Singh</h3>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }
