@@ -135,7 +135,7 @@ function App() {
           maxWidth: '800px',
           margin: '0 auto 2.5rem auto'
         }}>
-          Convert Hindi written in the Latin script (like "namaste") to native Devanagari script (like "नमस्ते") as you type — word by word, automatically.
+          Convert Hindi written in the English script (like "namaste") to native Hindi script (like "नमस्ते") as you type — word by word, automatically.
           Choose between two AI models, trained to understand transliteration nuances.
         </p>
       
