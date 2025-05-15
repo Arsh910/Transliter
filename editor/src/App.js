@@ -72,8 +72,8 @@ function App() {
             borderRadius: '5px'
           }}
         >
-          <option value={1}>Model A</option>
-          <option value={2}>Model B</option>
+          <option value={1}>Model V1</option>
+          <option value={2}>Model V2</option>
         </select>
 
         {modelMessage && (
