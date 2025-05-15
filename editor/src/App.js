@@ -32,7 +32,7 @@ function App() {
     if (!lastWord || lastWord === lastWordSent) return;
 
     try {
-      const response = await axios.post('https://transliteration-y8un.onrender.com/transliterate', {
+      const response = await axios.post('https://transliter.onrender.com/transliterate', {
         text: lastWord,
         model_id: model
       });
