@@ -8,7 +8,7 @@ app = FastAPI()
 # Enable CORS for local React frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://transliter-1.onrender.com/"],
+    allow_origins=["https://transliter-1.onrender.com"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
