@@ -47,7 +47,6 @@ function App() {
   };
 
   return (
-    <>
     <div style={{
       backgroundColor: '#1e1e1e',
       color: 'white',
@@ -110,35 +109,71 @@ function App() {
           resize: 'vertical'
         }}
       />
-    </div>
-    <div style={{
-          marginTop: '2rem',
-          padding: '1.5rem',
-          backgroundColor: '#2a2a2a',
-          color: '#f1f1f1',
-          borderRadius: '12px',
-          lineHeight: '1.6',
-          fontFamily: 'monospace'
-        }}>
-          <h3>🔍 Examples</h3>
-          <ul>
-            <li><strong>namaste</strong> ➝ नमस्ते</li>
-            <li><strong>sir</strong> ➝ सर</li>
-            <li><strong>mera naam Rahul hai</strong> ➝ मेरा नाम राहुल है</li>
-            <li><strong>kya haal hai</strong> ➝ क्या हाल है</li>
-          </ul>
         
-          <h3 style={{ marginTop: '1.5rem' }}>📌 About This Project</h3>
-          <p>
-            This is a real-time Hindi transliteration tool. It converts words typed in Latin script (e.g., "namaste") into Devanagari script (e.g., "नमस्ते").
-            As you type, each word is automatically transliterated using an AI model trained on Hindi text.
-          </p>
-          <p>
-            You can choose between two models ("Model A" and "Model B") for transliteration. Each model has different behavior and accuracy.
-            This tool is built using React for the frontend and PyTorch + FastAPI for the backend, and can be deployed easily on platforms like Render.
-          </p>
+      <div style={{
+        marginTop: '4rem',
+        padding: '3rem',
+        background: 'linear-gradient(to right, #1f1f1f, #2a2a2a)',
+        color: '#ffffff',
+        borderRadius: '16px',
+        boxShadow: '0 0 30px rgba(0,0,0,0.5)',
+        maxWidth: '900px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        textAlign: 'center'
+      }}>
+        <h1 style={{
+          fontSize: '2.5rem',
+          marginBottom: '1rem',
+          fontWeight: '700',
+          color: '#00FFD1'
+        }}>🔤 Real-Time Hindi Transliteration</h1>
+      
+        <p style={{
+          fontSize: '1.25rem',
+          lineHeight: '2rem',
+          maxWidth: '800px',
+          margin: '0 auto 2.5rem auto'
+        }}>
+          Convert Hindi written in the Latin script (like "namaste") to native Devanagari script (like "नमस्ते") as you type — word by word, automatically.
+          Choose between two AI models, trained to understand transliteration nuances.
+        </p>
+      
+        <h2 style={{
+          fontSize: '2rem',
+          color: '#FFEA00',
+          marginBottom: '1rem'
+        }}>📚 Examples</h2>
+      
+        <div style={{
+          fontSize: '1.5rem',
+          lineHeight: '2.25rem',
+          fontFamily: 'monospace',
+          marginBottom: '2rem'
+        }}>
+          <p><strong>namaste</strong> ➝ नमस्ते</p>
+          <p><strong>sir</strong> ➝ सर</p>
+          <p><strong>mera naam Rahul hai</strong> ➝ मेरा नाम राहुल है</p>
+          <p><strong>kya haal hai</strong> ➝ क्या हाल है</p>
+        </div>
+      
+        <h2 style={{
+          fontSize: '2rem',
+          color: '#FF6B81',
+          marginBottom: '1rem'
+        }}>💡 How It Works</h2>
+      
+        <p style={{
+          fontSize: '1.25rem',
+          lineHeight: '2rem',
+          maxWidth: '800px',
+          margin: '0 auto'
+        }}>
+          This web app uses a character-level encoder-decoder model trained on Hindi transliterations. It's built with <strong>React.js</strong> and powered by a <strong>PyTorch + FastAPI</strong> backend.
+          As you pause typing, each word gets sent to the server and comes back in Devanagari — instantly and smartly.
+        </p>
+      </div>  
     </div>
-  </>
   );
 }
 
